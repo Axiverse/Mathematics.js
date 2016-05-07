@@ -2,7 +2,7 @@
   "name": "mathematics.js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Mathematics.js",
   "engines": {
     "node": ">=6.0.0"
   },
@@ -10,6 +10,7 @@
     "test": "test"
   },
   "scripts": {
+    "build": "webpack && cat build/header.js build/body.js > Mathematics.js",
     "test": "nodeunit $(find ./test -name \\*.test.js)"
   },
   "repository": {
